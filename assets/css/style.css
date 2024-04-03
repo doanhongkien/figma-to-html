@@ -13,7 +13,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
 }
-/* =========common========= */
+/* =========common=============================================== */
 
 a {
   text-decoration: none;
@@ -48,7 +48,23 @@ a {
   cursor: pointer;
   opacity: 0.9;
 }
-/* ======header===== */
+
+/* ===========tối ưu giao diện========================= */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
+}
+
+/* ======header========================================= */
+
 .header {
   background-color: #fffcf4;
 }
@@ -96,7 +112,7 @@ a {
 .header .action {
   margin-left: 49px;
 }
-/* ========hero======== */
+/* ========hero========================================== */
 .hero {
   padding: 56px 0 65px;
   background-color: #fffcf4;
@@ -105,7 +121,7 @@ a {
   display: flex;
 }
 
-/* ======hero left====== */
+/* ======hero left====================================== */
 .hero .media-block {
   position: relative;
   width: 48%;
@@ -171,7 +187,7 @@ a {
   font-weight: 600;
   line-height: 1.67;
 }
-/* ======hero right====== */
+/* ======hero right=============================== */
 .hero .content-block {
   width: 52%;
   padding-left: 130px;
@@ -246,7 +262,7 @@ a {
 .hero .stats strong:nth-child(2) {
   margin-left: 28px;
 }
-/* =======popular ======= */
+/* =======popular ============================= */
 .popular {
   padding: 65px 0;
   margin-top: 135px;
@@ -289,6 +305,7 @@ a {
   gap: 30px;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background-color: #fff;
